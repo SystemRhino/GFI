@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #232333;
+  padding: 0 10px;
+}
+.wrapper{
+  background: #2b2c40;
+  color: white;
+  max-width: 450px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+              0 32px 64px -48px rgba(0,0,0,0.5);
+}
+
+/* Login & Signup Form CSS Start */
+.form{
+  padding: 25px 30px;
+}
+.form header{
+  font-size: 35px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.form{
+  margin: 20px 0;
+}
+.form .error-text{
+  color: #721c24;
+  padding: 8px 10px;
+  text-align: center;
+  border-radius: 5px;
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+  margin-bottom: 10px;
+  display: none;
+}
+.form .name-details{
+  display: flex;
+}
+.form .name-details .field:first-child{
+  margin-right: 10px;
+}
+.form .name-details .field:last-child{
+  margin-left: 10px;
+}
+.form .field{
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: column;
+  position: relative;
+}
+.form .field label{
+  margin-bottom: 2px;
+  color: #fff;
+}
+h4{
+  color: #696cff;
+}
+input, textarea{
+  height: 40px;
+  width: 100%;
+  font-size: 16px;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 2px solid #696cff;
+}
+.field input{
+  outline: none;
+}
+.form .image input{
+  font-size: 17px;
+}
+button{
+  height: 45px;
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  background: #696cff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 13px;
+}
+.form .field i{
+  position: absolute;
+  right: 15px;
+  top: 70%;
+  color: #ccc;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+.form .field i.active::before{
+  color: #333;
+  content: "\f070";
+}
+.form .link{
+  text-align: center;
+  margin: 10px 0;
+  font-size: 17px;
+}
+.form .link a{
+  color: #696cff;
+}
+.form .link a:hover{
+  text-decoration: underline;
+}
+
+/*the container must be positioned relative:*/
+.custom-select {
+  height: 40px;
+  width: 100%;
+  font-size: 16px;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 2px solid #696cff;
+  outline: none;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: #696cff;
+}
+::selection {
+  color: white;
+  background-color: #696cff;
+}
+body::-webkit-scrollbar-thumb {   
+background-color: rgb(105, 108, 255, 0.3);   
+}
+body::-webkit-scrollbar {
+     width: 10px
+} 
+
+
+img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {display: none;}
